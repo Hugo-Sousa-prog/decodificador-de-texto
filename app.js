@@ -19,7 +19,7 @@ function descriptografarTexto(){
     let campoTextoEntrada = document.getElementById("textoEntrada").value;
 
     textoDescriptografado = campoTextoEntrada
-        .replace("enter"/g, "e")
+        .replace(/enter/g, "e")
         .replace(/imes/g, "i")
         .replace(/ai/g, "a")
         .replace(/ober/g, "o")
