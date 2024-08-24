@@ -15,18 +15,18 @@
 
     <main>
         <section>
-            <textarea name="campo-cript-descript" placeholder="Digite seu texto" required autofocus></textarea>
+            <textarea id="textoEntrada" placeholder="Digite seu texto" autofocus></textarea>
             <div>
                 <p>
                     Apenas letras minúsculas e sem acento.
                 </p>
-                <button onclick="">Criptografar</button>
-                <button onclick="">Descriptografar</button>
+                <button onclick="criptografarTexto()" class="botao-criptografar">Criptografar</button>
+                <button onclick="descriptografarTexto()" class="botao-descriptografar">Descriptografar</button>
             </div>
         </section>
 
         <section>
-            Texto a ser exibido
+            <textarea id="textoSaida" readonly placeholder="Texto criptografado aparecerá aqui..."></textarea>
         </section> 
 
     </main>
@@ -35,6 +35,7 @@
         <p>Desenvolvido por Hugo S.</p>
     </footer>
 
+        <script src="app.js"></script>
 </body>
 
 </html>
