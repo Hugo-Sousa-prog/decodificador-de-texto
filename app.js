@@ -38,3 +38,16 @@ function descriptografarTexto(){
     let campoTextoSaida = document.getElementById("textoSaida");
     campoTextoSaida.innerHTML = textoDescriptografado;
 }
+
+function copiarTexto(){
+    let campoTextoSaida = document.getElementById("textoSaida").value;
+
+    navigator.clipboard.writeText(campoTextoSaida)
+    .then(() => {
+        console.log("Texto copiado com sucesso!");
+    })
+    .catch(err => {
+        console.error("Erro ao copiar o texto: ", err);
+        alert("Falha ao copiar o texto.");
+    });
+}
