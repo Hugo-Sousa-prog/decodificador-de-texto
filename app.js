@@ -4,6 +4,11 @@ let textoDescriptografado;
 function criptografarTexto(){
     let campoTextoEntrada = document.getElementById("textoEntrada").value;
 
+    if (!/^[a-z\s]*$/.test(campoTextoEntrada)) {
+        alert("Uh-oh! Apenas letras minúsculas e sem acento.");
+        return;
+    }
+
     textoCriptografado = campoTextoEntrada
         .replace(/e/g, "enter")
         .replace(/i/g, "imes")
@@ -17,6 +22,11 @@ function criptografarTexto(){
 
 function descriptografarTexto(){
     let campoTextoEntrada = document.getElementById("textoEntrada").value;
+
+    if (!/^[a-z\s]*$/.test(campoTextoEntrada)) {
+        alert("Uh-oh! Apenas letras minúsculas e sem acento.");
+        return;
+    }
 
     textoDescriptografado = campoTextoEntrada
         .replace(/enter/g, "e")
