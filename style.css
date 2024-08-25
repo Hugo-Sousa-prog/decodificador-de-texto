@@ -1,8 +1,191 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --cor-primaria: #AD8B73;
+    --cor-secundaria: #E3CAA5;
+    --cor-terciaria: #CEAB93;
+    --cor-quarternaria: #FFFBE9;
+    --cor-secundaria-saida: #603F26;
+    --cor-hover: #D8DFE8;
+
+    --font-Inter: "Inter", sans-serif;
+}
+
+*{
     margin: 0;
     padding: 0%;
 }
 
-textarea{
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 0.5% 0 0.5% 2%;
+    background-color: var(--cor-terciaria);
+}
+
+.cabecalho__img{
+    border: 1px solid var(--cor-quarternaria);
+    border-radius: 100%;
+}
+
+.main{
+    padding: 5% 5% 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.main__entrada{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-Inter);
+    padding: 3%;
+    width: 50%;
+    height: 80vh;
+    gap: 40px;
+}
+
+.main__entrada__texto{
+    width: 100%;
+    height: 100%;
     border: none;
+    padding: 10px;
+    font-family: var(--font-Inter);
+    font-size: 2rem;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    box-shadow: none;
+    resize: none;
+    overflow: hidden;
+    outline: none;
+    text-align: justify;
+}
+
+.main__entrada__texto::placeholder{
+    color: var(--cor-secundaria);
+}
+
+.main__entrada__criptDescript{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main__entrada__criptDescript__aviso{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.75rem;
+    color: var(--cor-terciaria);
+    font-family: var(--font-Inter);
+    font-weight: 700;
+}
+
+.main__entrada__criptDescript__2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 24px;
+}
+
+.main__entrada__criptDescript__2__botao{
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-quarternaria);
+    font-family: var(--font-Inter);
+    font-size: 1rem;
+    border-radius: 24px;
+    border: 1px solid var(--cor-secundaria);
+    padding: 24px;
+    cursor: pointer;
+}
+
+.main__entrada__criptDescript__2__botao:hover{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.main__saida{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--font-Inter);
+    font-size: 1.5rem;
+    padding: 3%;
+    width: 25%;
+    height: 100vh;
+    border-radius: 32px;
+    border-color: var(--cor-quarternaria);
+    background-color: var(--cor-quarternaria);
+}
+
+.main__saida__resultado{
+    display: none; 
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 10px;
+    font-family: var(--font-Inter);
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-quarternaria);
+    box-shadow: none;
+    resize: none;
+    overflow: hidden;
+    outline: none;
+}
+
+.main__saida__subtitulo{
+    color: var(--cor-secundaria-saida);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.main__saida__paragrafo{
+    color: var(--cor-terciaria);
+    font-size: 1rem;
+}
+
+.main__saida__botao{
+    display: none;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--font-Inter);
+    font-size: 1rem;
+    border-radius: 24px;
+    border: 1px solid var(--cor-secundaria);
+    padding: 24px;
+    cursor: pointer;
+}
+
+.main__saida__botao:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-quarternaria);
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6%;
+    padding: 0.5% 0 0.5% 0;
+    background-color: var(--cor-terciaria);
+    font-size: 1.5rem;
+    font-family: var(--font-Inter);
+    color: var(--cor-quarternaria);
+}
+
+@media(max-width: 1200px){
+
 }

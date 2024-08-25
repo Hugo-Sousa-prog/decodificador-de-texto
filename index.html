@@ -11,29 +11,39 @@
 
 <body>
 
-    <header></header>
+    <header class="cabecalho">
+       <a href="https://www.linkedin.com/in/hugo-dos-santos-go/"><img class="cabecalho__img" src="./assets/icon_inumaki.png"></a> 
+    </header>
 
-    <main>
-        <section>
-            <textarea id="textoEntrada" placeholder="Digite seu texto" autofocus></textarea>
-            <div>
-                <p>
-                    Apenas letras minúsculas e sem acento.
+    <main class="main">
+        <section class="main__entrada">
+            <textarea id="textoEntrada" class="main__entrada__texto" placeholder="Digite seu texto" autofocus></textarea>
+            <div class="main__entrada__criptDescript">
+                <p class="main__entrada__criptDescript__aviso">
+                    <img src="./assets/icon_alerta.png" alt="Ícone de alerta"> Apenas letras minúsculas e sem acento.
                 </p>
-                <button onclick="criptografarTexto()" class="botao-criptografar">Criptografar</button>
-                <button onclick="descriptografarTexto()" class="botao-descriptografar">Descriptografar</button>
+                <div class="main__entrada__criptDescript__2">
+                <button onclick="criptografarTexto()" class="main__entrada__criptDescript__2__botao">Criptografar</button>
+                <button onclick="descriptografarTexto()" class="main__entrada__criptDescript__2__botao">Descriptografar</button>
+                </div>
             </div>
         </section>
 
-        <section>
-            <textarea id="textoSaida" readonly placeholder="Texto criptografado aparecerá aqui..."></textarea>
-            <button onclick="copiarTexto()" class="botao-copiar">Copiar</button>
-        </section> 
-
+        <section id="textoSaida" class="main__saida">
+            <textarea id="textoSaidaResultado" class="main__saida__resultado"></textarea> 
+            <div id="mensagemNenhumTexto" class="main__saida__texto">
+                <img src="./assets/lupa.png" alt="Imagem de uma lupa sobre um texto"> 
+                <h2 class="main__saida__subtitulo">Nenhuma mensagem encontrada</h2>
+                <p class="main__saida__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <button onclick="copiarTexto()" id="botaoCopiar" class="main__saida__botao">Copiar</button>
+        </section>
     </main>
 
-    <footer>
+    <footer class="rodape">
+        <img src="./assets/icon_inumaki_32px.png">
         <p>Desenvolvido por Hugo S.</p>
+        <img src="./assets/icon_inumaki_32px.png">
     </footer>
 
         <script src="app.js"></script>
