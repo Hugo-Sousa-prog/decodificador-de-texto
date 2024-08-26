@@ -29,7 +29,7 @@ body{
 }
 
 .cabecalho__img{
-    border: 1px solid var(--cor-quarternaria);
+    border: 3px solid var(--cor-quarternaria);
     border-radius: 100%;
 }
 
