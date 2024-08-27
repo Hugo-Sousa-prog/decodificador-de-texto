@@ -2,7 +2,7 @@
 
 ![Static Badge](https://img.shields.io/badge/Status-Em%20Desenvolvimento-green)
 
-Este projeto realizado foi um desafio proposto pelo projeto ONE (Oracle Next Education), em parceria com a Alura. Consiste em um site que codifica ou descodifica palavras.
+Este projeto realizado foi um desafio proposto pelo projeto ONE (Oracle Next Education), em parceria com a Alura. Consiste em um site que criptografa ou descriptografa palavras.
 
 <h4>Projeto em finalização</h4>
 
