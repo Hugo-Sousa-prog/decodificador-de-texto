@@ -20,7 +20,7 @@ Este projeto realizado foi um desafio proposto pelo projeto ONE (Oracle Next Edu
 - `function botaoVisivel`: Esse foi o que mais me deu "dor de cabeça", como um extra quis colocar um botão de copiar na página, o botão de copiar em questão foi bem simples de fazer após pesquisar sobre, mas fazer ele aparecer na textarea após gerar o resultado foi um pouco desafiador. Após a geração do resultado tudo que estava na textarea "sumia" (imagem, texto e o botão de copiar), então decidi ocultar o botão através do CSS (visibilty: hidden) e remover o atribudo por um função no JavaScript, mas não deu certo, tentei de várias formas... com setAtributte, removeAtributte, mas nada funcionava. Até que chamei por reforços e com a ajuda de um amigo achamos o X da questão, acontece que como dito anteriormente "tudo que estava na textarea "sumia"", então ao tentar alterar a propriedade do botão pelo JS a função não encontrava nenhum elemento, porquê ele não se encotrava mais na textarea. Como solução fiz uma tag div no HTML dentro da textarea com os textos, imagem e o botão, que seriam "escondidos" pela função ‎botaoVisivel() quando o resultado fosse gerado e o inverso aconteceria com o botão, que se encontra escondido (display: none), até ser chamado pela função e aparecer (display: block).
 
 # 🔗 Acesso ao projeto
-É possível acessar o projeto deste <a href="https://decodificador-de-texto-one-iota.vercel.app">link</a>
+É possível acessar o projeto por meio deste <a href="https://decodificador-de-texto-one-iota.vercel.app">link</a>
 
 # ⌨ Tecnologias utilizadas
 ![css_icon](https://github.com/user-attachments/assets/3a588f78-603c-4f80-a1c7-1582fb944da0)
